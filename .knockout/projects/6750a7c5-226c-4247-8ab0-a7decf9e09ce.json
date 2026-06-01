@@ -1,0 +1,783 @@
+{
+  "id": "6750a7c5-226c-4247-8ab0-a7decf9e09ce",
+  "name": "Project 3",
+  "description": "",
+  "bpm": 120,
+  "key": "",
+  "sounds": [
+    {
+      "slot": 600,
+      "name": "Soncity_STARTER_Hola_ARPEGGIO_2_Reggaeton_Energetic_C#m_90bpm",
+      "filename": "Soncity_STARTER_Hola_ARPEGGIO_2_Reggaeton_Energetic_C#m_90bpm.wav",
+      "originalPath": "Drift Phonk/Loop/Synth/Soncity_STARTER_Hola_ARPEGGIO_2_Reggaeton_Energetic_C#m_90bpm.wav",
+      "optimizedPath": null,
+      "category": "loop",
+      "bpm": 90,
+      "key": "C#min",
+      "size": 2822672,
+      "isLoop": true
+    },
+    {
+      "slot": 601,
+      "name": "Drum_Hats_09_160bpm",
+      "filename": "Drum_Hats_09_160bpm.wav",
+      "originalPath": "Drift Phonk/Loop/Drums/Drum_Hats_09_160bpm.wav",
+      "optimizedPath": null,
+      "category": "loop",
+      "bpm": 160,
+      "key": "",
+      "size": 1587644,
+      "isLoop": true
+    },
+    {
+      "slot": 602,
+      "name": "BNG_PHO_Hat_150BPM_D#_Novoice",
+      "filename": "BNG_PHO_Hat_150BPM_D#_Novoice.wav",
+      "originalPath": "Drift Phonk/Loop/Drums/BNG_PHO_Hat_150BPM_D#_Novoice.wav",
+      "optimizedPath": null,
+      "category": "loop",
+      "bpm": 150,
+      "key": "",
+      "size": 3392494,
+      "isLoop": true
+    },
+    {
+      "slot": 603,
+      "name": "808Culture_GenuineSounds_Trap_Vocal_Loop_06_138bpm_D#m",
+      "filename": "808Culture_GenuineSounds_Trap_Vocal_Loop_06_138bpm_D#m.wav",
+      "originalPath": "Drift Phonk/Loop/Vocals/808Culture_GenuineSounds_Trap_Vocal_Loop_06_138bpm_D#m.wav",
+      "optimizedPath": null,
+      "category": "loop",
+      "bpm": 138,
+      "key": "D#min",
+      "size": 3681574,
+      "isLoop": true
+    }
+  ],
+  "padAssignments": [
+    {
+      "group": "a",
+      "pad": 1,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 2,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 3,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 4,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 5,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 6,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 7,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 8,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 9,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 10,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 11,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 12,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 1,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 2,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 3,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 4,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 5,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 6,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 7,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 8,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 9,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 10,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 11,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 12,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "c",
+      "pad": 1,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "c",
+      "pad": 2,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "c",
+      "pad": 3,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "c",
+      "pad": 4,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "c",
+      "pad": 5,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "c",
+      "pad": 6,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "c",
+      "pad": 7,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "c",
+      "pad": 8,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "c",
+      "pad": 9,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "c",
+      "pad": 10,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "c",
+      "pad": 11,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "c",
+      "pad": 12,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 1,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 2,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 3,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 4,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 5,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 6,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 7,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 8,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 9,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 10,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 11,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 12,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    }
+  ],
+  "slotMap": {
+    "600": {
+      "slot": 600,
+      "name": "Soncity_STARTER_Hola_ARPEGGIO_2_Reggaeton_Energetic_C#m_90bpm",
+      "filename": "Soncity_STARTER_Hola_ARPEGGIO_2_Reggaeton_Energetic_C#m_90bpm.wav",
+      "originalPath": "Drift Phonk/Loop/Synth/Soncity_STARTER_Hola_ARPEGGIO_2_Reggaeton_Energetic_C#m_90bpm.wav",
+      "optimizedPath": null,
+      "category": "loop",
+      "bpm": 90,
+      "key": "C#min",
+      "size": 2822672,
+      "isLoop": true
+    },
+    "601": {
+      "slot": 601,
+      "name": "Drum_Hats_09_160bpm",
+      "filename": "Drum_Hats_09_160bpm.wav",
+      "originalPath": "Drift Phonk/Loop/Drums/Drum_Hats_09_160bpm.wav",
+      "optimizedPath": null,
+      "category": "loop",
+      "bpm": 160,
+      "key": "",
+      "size": 1587644,
+      "isLoop": true
+    },
+    "602": {
+      "slot": 602,
+      "name": "BNG_PHO_Hat_150BPM_D#_Novoice",
+      "filename": "BNG_PHO_Hat_150BPM_D#_Novoice.wav",
+      "originalPath": "Drift Phonk/Loop/Drums/BNG_PHO_Hat_150BPM_D#_Novoice.wav",
+      "optimizedPath": null,
+      "category": "loop",
+      "bpm": 150,
+      "key": "",
+      "size": 3392494,
+      "isLoop": true
+    },
+    "603": {
+      "slot": 603,
+      "name": "808Culture_GenuineSounds_Trap_Vocal_Loop_06_138bpm_D#m",
+      "filename": "808Culture_GenuineSounds_Trap_Vocal_Loop_06_138bpm_D#m.wav",
+      "originalPath": "Drift Phonk/Loop/Vocals/808Culture_GenuineSounds_Trap_Vocal_Loop_06_138bpm_D#m.wav",
+      "optimizedPath": null,
+      "category": "loop",
+      "bpm": 138,
+      "key": "D#min",
+      "size": 3681574,
+      "isLoop": true
+    }
+  },
+  "createdAt": "2026-05-24T14:01:11.623Z",
+  "updatedAt": "2026-05-24T14:03:17.997Z"
+}

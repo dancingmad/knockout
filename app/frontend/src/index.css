@@ -1,0 +1,237 @@
+/* KO II Knockout - Global Styles */
+:root {
+  --ko-orange: #ff681d;
+  --ko-dark: #1a1a1a;
+  --ko-darker: #111111;
+  --ko-gray: #2a2a2a;
+  --ko-light-gray: #3a3a3a;
+  --ko-text: #e0e0e0;
+  --ko-text-dim: #888888;
+  --ko-pad-a: #d32f2f;
+  --ko-pad-b: #1565c0;
+  --ko-pad-c: #2e7d32;
+  --ko-pad-d: #e65100;
+  --ko-grid: #252525;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--ko-darker);
+  color: var(--ko-text);
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+  font-size: 12px;
+}
+
+/* Ant Design dark theme overrides */
+.ant-layout {
+  background: var(--ko-darker) !important;
+}
+
+.ant-layout-sider {
+  background: var(--ko-dark) !important;
+  border-right: 1px solid #333 !important;
+}
+
+.ant-menu-dark {
+  background: transparent !important;
+}
+
+.ant-menu-dark .ant-menu-item-selected {
+  background-color: var(--ko-orange) !important;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--ko-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+/* KO-style grid background */
+.ko-grid-bg {
+  background-color: var(--ko-darker);
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Pad styles */
+.pad {
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+
+.pad:hover {
+  filter: brightness(1.2);
+}
+
+.pad:active {
+  transform: scale(0.96);
+  filter: brightness(0.8);
+}
+
+.pad.assigned {
+  box-shadow: 0 0 0 2px rgba(255, 104, 29, 0.5);
+}
+
+.pad.empty {
+  opacity: 0.4;
+}
+
+.pad-label {
+  font-size: 9px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(255,255,255,0.9);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  padding: 0 4px;
+}
+
+.pad-slot {
+  font-size: 8px;
+  color: rgba(255,255,255,0.5);
+  margin-top: 2px;
+}
+
+/* Sample row */
+.sample-row {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.1s;
+}
+
+.sample-row:hover {
+  background: rgba(255, 104, 29, 0.1);
+}
+
+.sample-row.selected {
+  background: rgba(255, 104, 29, 0.2);
+  border-left: 2px solid var(--ko-orange);
+}
+
+/* Category badge */
+.category-badge {
+  font-size: 9px;
+  font-weight: bold;
+  padding: 1px 5px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Waveform container */
+.waveform-container {
+  background: #0a0a0a;
+  border: 1px solid #333;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Slot grid */
+.slot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 4px;
+}
+
+.slot-cell {
+  background: var(--ko-gray);
+  border: 1px solid #3a3a3a;
+  border-radius: 3px;
+  padding: 6px 8px;
+  cursor: pointer;
+  transition: all 0.1s;
+  min-height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slot-cell:hover {
+  border-color: var(--ko-orange);
+  background: #2e2e2e;
+}
+
+.slot-cell.occupied {
+  border-color: #444;
+  background: #232323;
+}
+
+.slot-cell.occupied:hover {
+  border-color: var(--ko-orange);
+}
+
+.slot-number {
+  font-size: 9px;
+  color: var(--ko-text-dim);
+  font-weight: bold;
+}
+
+.slot-name {
+  font-size: 10px;
+  color: var(--ko-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Drag over highlight */
+.drag-over {
+  border-color: var(--ko-orange) !important;
+  background: rgba(255, 104, 29, 0.1) !important;
+}
+
+/* Transport / waveform controls */
+.transport-btn {
+  background: #333;
+  border: 1px solid #444;
+  color: var(--ko-text);
+  padding: 4px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 11px;
+  transition: all 0.1s;
+}
+
+.transport-btn:hover {
+  background: #444;
+  border-color: var(--ko-orange);
+}
+
+.transport-btn.active {
+  background: var(--ko-orange);
+  border-color: var(--ko-orange);
+  color: white;
+}
