@@ -4,21 +4,27 @@
  * 
  * ppak format (reverse-engineered from EP-133 backup):
  * - ZIP archive containing:
- *   - meta.json: device/format metadata
- *   - sounds/{slot} {name}.wav: audio files at 46875 Hz, 16-bit
- *   - projects/P01.tar: TAR containing:
+ *   - /meta.json:              device/format metadata
+ *   - /sounds/{slot} {name}.wav: audio files at 46875 Hz, 16-bit
+ *   - /projects/P01.tar:      TAR containing:
  *     - pads/{group}/p{01-12}: binary pad config (26 bytes each)
- *     - patterns/{pattern}: pattern data
- *     - scenes: scenes binary data
- *     - settings: settings binary data
- *     - fx_settings: fx settings binary data
+ *     - patterns/{pattern}:    pattern data
+ *     - scenes:                scenes binary data
+ *     - settings:              settings binary data
+ *     - fx_settings:           fx settings binary data
+ *
+ * IMPORTANT: the ep-sample-tool's Archive parser uses the regex
+ *   regex: \.* + /projects/(P##)(.tar|...) and \.* + /sounds/(###) ...
+ * which requires a '/' before 'projects/' and 'sounds/'.
+ * All standard Node.js ZIP libraries strip leading slashes, so we use
+ * a custom ZIP builder (zipBuilder.js) that writes entry names verbatim.
  */
 
 const fs = require('fs');
 const path = require('path');
-const archiver = require('archiver');
 const tar = require('tar');
 const os = require('os');
+const { buildZip } = require('./zipBuilder');
 
 const DEVICE_SAMPLE_RATE = 46875;
 
@@ -82,16 +88,14 @@ function buildEmptyPad() {
  * Template from real device capture - 222 bytes of repeating pattern data
  */
 function buildDefaultScenes() {
-  // From real device: scenes file with pattern assignments
-  // Simple default: 9 scenes, each with default values
-  const buf = Buffer.alloc(222, 0);
-  // Pattern from captured scenes file
-  const pattern = [0x01, 0x01, 0x01, 0x04, 0x04];
-  for (let i = 0; i < buf.length; i++) {
-    buf[i] = pattern[i % pattern.length];
+  // Real device scenes data: 612 bytes
+  // This is pattern/scene assignment data from a real device backup
+  const hex = '00010101010404090101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010101010404010000000100000001000000';
+  try {
+    return Buffer.from(hex, 'hex');
+  } catch (e) {
+    return Buffer.alloc(612, 0);
   }
-  buf[0] = 0x00;
-  return buf;
 }
 
 /**
@@ -99,7 +103,6 @@ function buildDefaultScenes() {
  * Template from real device
  */
 function buildDefaultSettings() {
-  // From real device: settings file with default tempo/pitch values
   const hex = '0000000000ca42a6ed7f3fa6ed7f3f0000803f0000803fd09b423f9ca7023fb823243f250619' +
               '3f000000008178053f8bc3a93eb29d3f3f000080bf478f073f000080bfbd8c023fd3f67f3f55f6453f' +
               '000080bfdc46333f000080bf000080bfd252f93e000080bf000080bf2d43dc3d77102b3f000080bf' +
@@ -152,17 +155,13 @@ async function buildProjectTar(project) {
     fs.mkdirSync(groupDir, { recursive: true });
     
     for (let padNum = 1; padNum <= 12; padNum++) {
-      const padKey = `${group}${padNum}`;
       const assignment = (project.padAssignments || []).find(
         a => a.group === group && a.pad === padNum
       );
       
-      let padBuf;
-      if (assignment && assignment.config && assignment.config.slot) {
-        padBuf = buildPadBinary(assignment.config);
-      } else {
-        padBuf = buildEmptyPad();
-      }
+      const padBuf = (assignment && assignment.config && assignment.config.slot)
+        ? buildPadBinary(assignment.config)
+        : buildEmptyPad();
       
       const padFile = `p${String(padNum).padStart(2, '0')}`;
       fs.writeFileSync(path.join(groupDir, padFile), padBuf);
@@ -173,33 +172,21 @@ async function buildProjectTar(project) {
   const patternsDir = path.join(tmpDir, 'patterns');
   fs.mkdirSync(patternsDir, { recursive: true });
   
-  // Write default patterns for each group
   const patternGroups = ['a', 'b', 'c', 'd'];
   for (const group of patternGroups) {
-    fs.writeFileSync(
-      path.join(patternsDir, `${group}01`),
-      buildDefaultPattern()
-    );
+    fs.writeFileSync(path.join(patternsDir, `${group}01`), buildDefaultPattern());
   }
   
-  // Write scenes
+  // Write scenes, settings, fx_settings
   fs.writeFileSync(path.join(tmpDir, 'scenes'), buildDefaultScenes());
-  
-  // Write settings  
   fs.writeFileSync(path.join(tmpDir, 'settings'), buildDefaultSettings());
-  
-  // Write fx_settings
   fs.writeFileSync(path.join(tmpDir, 'fx_settings'), buildDefaultFxSettings());
   
   // Create TAR archive
   const tarPath = path.join(os.tmpdir(), `P01_${Date.now()}.tar`);
   
   await tar.create(
-    {
-      file: tarPath,
-      cwd: tmpDir,
-      portable: true,
-    },
+    { file: tarPath, cwd: tmpDir, portable: true },
     ['.']
   );
   
@@ -213,72 +200,54 @@ async function buildProjectTar(project) {
 }
 
 /**
- * Build the complete ppak file
- * 
- * @param {Object} project - The project configuration
- * @param {Array} project.sounds - Array of { slot, name, filePath }
- * @param {Array} project.padAssignments - Pad assignments
- * @param {Object} project.meta - Optional metadata overrides
- * @returns {Promise<Buffer>} The ppak ZIP buffer
+ * Build the complete ppak file.
+ *
+ * Uses a custom ZIP builder to write entry names with a leading '/' so they
+ * match the format the device produces and the ep-sample-tool expects.
  */
 async function buildPpak(project) {
-  return new Promise(async (resolve, reject) => {
-    try {
-      const chunks = [];
-      
-      const archive = archiver('zip', {
-        zlib: { level: 6 },
-      });
-      
-      archive.on('data', chunk => chunks.push(chunk));
-      archive.on('end', () => resolve(Buffer.concat(chunks)));
-      archive.on('error', reject);
-      
-      // Build meta.json
-      const meta = {
-        info: 'teenage engineering - pak file',
-        pak_version: 1,
-        pak_type: 'project',
-        pak_release: '1.2.0',
-        device_name: 'EP-133',
-        device_sku: 'TE032AS001',
-        device_version: '2.0.5',
-        generated_at: new Date().toISOString(),
-        author: 'knockout',
-        base_sku: 'TE032AS001',
-        ...(project.meta || {}),
-      };
-      
-      archive.append(JSON.stringify(meta, null, 2), { name: 'meta.json' });
-      
-      // Add sound files  
-      const soundsAdded = new Set();
-      for (const sound of (project.sounds || [])) {
-        if (!sound.filePath || !sound.slot || soundsAdded.has(sound.slot)) continue;
-        
-        const ext = path.extname(sound.filePath).toLowerCase();
-        const slotStr = String(sound.slot).padStart(3, '0');
-        const safeName = sound.name
-          .replace(/[^\w\s.-]/g, '')
-          .toLowerCase()
-          .trim();
-        const soundFilename = `${slotStr} ${safeName}${ext}`;
-        
-        if (fs.existsSync(sound.filePath)) {
-          archive.file(sound.filePath, { name: `/sounds/${soundFilename}` });
-          soundsAdded.add(sound.slot);
-        }
-      }
-      
-      // Build and add project TAR
-      const tarData = await buildProjectTar(project);
-      archive.append(tarData, { name: '/projects/P01.tar' });
-      
-      archive.finalize();
-    } catch (err) {
-      reject(err);
+  const meta = {
+    info: 'teenage engineering - pak file',
+    pak_version: 1,
+    pak_type: 'project',
+    pak_release: '1.2.0',
+    device_name: 'EP-133',
+    device_sku: 'TE032AS001',
+    device_version: '2.0.5',
+    generated_at: new Date().toISOString(),
+    author: 'knockout',
+    base_sku: 'TE032AS001',
+    ...(project.meta || {}),
+  };
+
+  const entries = [];
+
+  entries.push({ name: '/meta.json', data: Buffer.from(JSON.stringify(meta, null, 2)) });
+
+  // Add sound files
+  const soundsAdded = new Set();
+  for (const sound of (project.sounds || [])) {
+    if (!sound.filePath || !sound.slot || soundsAdded.has(sound.slot)) continue;
+
+    const ext = path.extname(sound.filePath).toLowerCase();
+    const slotStr = String(sound.slot).padStart(3, '0');
+    const safeName = sound.name
+      .replace(/[^\w\s.-]/g, '')
+      .toLowerCase()
+      .trim();
+    const soundFilename = `${slotStr} ${safeName}${ext}`;
+
+    if (fs.existsSync(sound.filePath)) {
+      entries.push({ name: `/sounds/${soundFilename}`, data: fs.readFileSync(sound.filePath) });
+      soundsAdded.add(sound.slot);
     }
-  });
+  }
+
+  // Build and add project TAR
+  const tarData = await buildProjectTar(project);
+  entries.push({ name: '/projects/P01.tar', data: tarData });
+
+  return buildZip(entries);
 }
 
 /**

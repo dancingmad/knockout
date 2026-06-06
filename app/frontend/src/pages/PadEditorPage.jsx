@@ -9,10 +9,11 @@ import {
 } from '@ant-design/icons';
 import useStore from '../store';
 import {
-  PAD_GROUPS, getCategoryForSlot, formatBpm, getCategoryById,
-  midiNoteToName,
+  PAD_GROUPS, SLOT_CATEGORIES, getCategoryForSlot, formatBpm, getCategoryById,
+  midiNoteToName, truncatePadName,
 } from '../utils/ko2';
 import { audioApi } from '../utils/api';
+import WaveformPlayer from '../components/WaveformPlayer';
 
 const { Title, Text } = Typography;
 const { Option } = Select;
@@ -496,7 +497,7 @@ function KO2Pad({ padNum, group, groupColor, sound, category, config, isSelected
             whiteSpace: 'nowrap',
             lineHeight: 1.3,
           }}>
-            {sound.name}
+            {truncatePadName(sound.name)}
           </div>
           <div style={{ fontSize: 8, color: '#555', marginTop: 1 }}>
             #{config.slot}

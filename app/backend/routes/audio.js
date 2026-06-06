@@ -84,11 +84,11 @@ router.post('/optimize-project/:id', async (req, res) => {
       }
       
       try {
-        const outputPath = getOptimizedPath(fullPath, sound.category);
+        // Pass slot number as uniqueId to prevent hash collisions
+        const outputPath = getOptimizedPath(fullPath, sound.category, sound.slot);
         
-        if (!fs.existsSync(outputPath)) {
-          await optimizeSample(fullPath, outputPath, sound.category || 'misc');
-        }
+        // Always re-optimize to ensure we have the correct audio for each slot
+        await optimizeSample(fullPath, outputPath, sound.category || 'misc');
         
         sound.optimizedPath = path.relative(LIBRARY_ROOT, outputPath);
         results.push({ slot: sound.slot, success: true, outputPath: sound.optimizedPath });

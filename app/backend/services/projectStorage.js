@@ -123,13 +123,28 @@ function createDefaultProject(name = 'New Project') {
 
 /**
  * Get optimized sample path for a given source path
+ * @param {string} originalPath - Original file path (or unique identifier)
+ * @param {string} category - Sample category (kick, perc, bass, etc.)
+ * @param {string|number} uniqueId - Optional unique identifier (slot number or sound name) to prevent hash collisions
  */
-function getOptimizedPath(originalPath, category) {
+function getOptimizedPath(originalPath, category, uniqueId) {
   ensureDirs();
-  const hash = Buffer.from(originalPath).toString('base64').replace(/[/+=]/g, '_').slice(0, 20);
+  
+  // Use uniqueId if provided, otherwise use full path hash
+  // Increased hash length to 50 chars to avoid collisions with similar prefixes
+  const identifier = uniqueId || originalPath;
+  const hash = Buffer.from(identifier).toString('base64').replace(/[/+=]/g, '_').slice(0, 50);
+  
   const catDir = path.join(OPTIMIZED_DIR, category || 'misc');
   fs.mkdirSync(catDir, { recursive: true });
-  return path.join(catDir, `${hash}.wav`);
+  
+  // Also add a safe version of the original filename to make debugging easier
+  const safeName = originalPath
+    .replace(/[^a-zA-Z0-9]/g, '_')
+    .replace(/_+/g, '_')
+    .slice(0, 30);
+  
+  return path.join(catDir, `${hash}_${safeName}.wav`);
 }
 
 module.exports = {

@@ -55,6 +55,13 @@ export function formatSize(bytes) {
   return `${(bytes / 1024 / 1024).toFixed(1)} MB`;
 }
 
+// Truncate a long sample name for tight spaces: first 6 … last 10
+export function truncatePadName(name) {
+  if (!name) return '';
+  if (name.length <= 19) return name;
+  return `${name.slice(0, 6)}…${name.slice(-10)}`;
+}
+
 // Format BPM
 export function formatBpm(bpm) {
   if (!bpm || bpm === 0) return '—';
