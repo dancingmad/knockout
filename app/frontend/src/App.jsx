@@ -5,7 +5,7 @@ import {
   SoundOutlined,
   ExperimentOutlined,
   ImportOutlined,
-  ExportOutlined,
+  UnorderedListOutlined,
   SettingOutlined,
 } from '@ant-design/icons';
 import useStore from './store';
@@ -13,14 +13,16 @@ import LibraryPage from './pages/LibraryPage';
 import SongBuilderPage from './pages/SongBuilderPage';
 import PadEditorPage from './pages/PadEditorPage';
 import ImportExportPage from './pages/ImportExportPage';
+import SequencerPage from './pages/SequencerPage';
 
 const { Sider, Content, Header } = Layout;
 
 const NAV_ITEMS = [
-  { key: 'library', icon: <SoundOutlined />, label: 'Sample Library' },
-  { key: 'builder', icon: <AppstoreOutlined />, label: 'Song Builder' },
-  { key: 'pads', icon: <ExperimentOutlined />, label: 'Pad Editor' },
-  { key: 'import-export', icon: <ImportOutlined />, label: 'Import / Export' },
+  { key: 'library', icon: <SoundOutlined />, label: 'Library' },
+  { key: 'builder', icon: <AppstoreOutlined />, label: 'Builder' },
+  { key: 'sequencer', icon: <UnorderedListOutlined />, label: 'Sequencer' },
+  { key: 'pads', icon: <ExperimentOutlined />, label: 'Pads' },
+  { key: 'import-export', icon: <ImportOutlined />, label: 'Import/Export' },
 ];
 
 function App() {
@@ -35,6 +37,7 @@ function App() {
     switch (activePage) {
       case 'library': return <LibraryPage />;
       case 'builder': return <SongBuilderPage />;
+      case 'sequencer': return <SequencerPage />;
       case 'pads': return <PadEditorPage />;
       case 'import-export': return <ImportExportPage />;
       default: return <LibraryPage />;
