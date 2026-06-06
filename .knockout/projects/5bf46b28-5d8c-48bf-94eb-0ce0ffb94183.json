@@ -1,0 +1,1023 @@
+{
+  "id": "5bf46b28-5d8c-48bf-94eb-0ce0ffb94183",
+  "name": "Special One",
+  "description": "",
+  "bpm": 120,
+  "key": "",
+  "sounds": [
+    {
+      "slot": 1,
+      "name": "AMV_VDB5_drums_ride_one_shot_darkride",
+      "filename": "AMV_VDB5_drums_ride_one_shot_darkride.wav",
+      "originalPath": "Dream Pop/One_Shot/Drums/AMV_VDB5_drums_ride_one_shot_darkride.wav",
+      "optimizedPath": ".knockout/optimized/kick/L1VzZXJzL3Rob3JzdGVu.wav",
+      "category": "kick",
+      "bpm": 0,
+      "key": "",
+      "size": 883998,
+      "isLoop": false
+    },
+    {
+      "slot": 2,
+      "name": "DDD_Drums_One-shot_Drum-Machine_RX11_Ride_Pop_Funk_Disco_80s",
+      "filename": "DDD_Drums_One-shot_Drum-Machine_RX11_Ride_Pop_Funk_Disco_80s.wav",
+      "originalPath": "Dream Pop/One_Shot/Drums/DDD_Drums_One-shot_Drum-Machine_RX11_Ride_Pop_Funk_Disco_80s.wav",
+      "optimizedPath": ".knockout/optimized/kick/L1VzZXJzL3Rob3JzdGVu.wav",
+      "category": "kick",
+      "bpm": 0,
+      "key": "",
+      "size": 680578,
+      "isLoop": false
+    },
+    {
+      "slot": 3,
+      "name": "OSTAudio_snare_digital",
+      "filename": "OSTAudio_snare_digital.wav",
+      "originalPath": "Dream Pop/One_Shot/Drums/OSTAudio_snare_digital.wav",
+      "optimizedPath": ".knockout/optimized/kick/L1VzZXJzL3Rob3JzdGVu.wav",
+      "category": "kick",
+      "bpm": 0,
+      "key": "",
+      "size": 119114,
+      "isLoop": false
+    },
+    {
+      "slot": 4,
+      "name": "STCR2_PR2_Kick_01_Essence_F",
+      "filename": "STCR2_PR2_Kick_01_Essence_F.wav",
+      "originalPath": "Drift Phonk/One_Shot/Drums/STCR2_PR2_Kick_01_Essence_F.wav",
+      "optimizedPath": ".knockout/optimized/kick/L1VzZXJzL3Rob3JzdGVu.wav",
+      "category": "kick",
+      "bpm": 0,
+      "key": "",
+      "size": 42560,
+      "isLoop": false
+    },
+    {
+      "slot": 300,
+      "name": "Afro-Tech-Percs-vol-1_Rhythm-Science_tambourine_percussion_oneshot_phrase",
+      "filename": "Afro-Tech-Percs-vol-1_Rhythm-Science_tambourine_percussion_oneshot_phrase.wav",
+      "originalPath": "Dream Pop/One_Shot/Percussion/Afro-Tech-Percs-vol-1_Rhythm-Science_tambourine_percussion_oneshot_phrase.wav",
+      "optimizedPath": ".knockout/optimized/perc/L1VzZXJzL3Rob3JzdGVu.wav",
+      "category": "perc",
+      "bpm": 0,
+      "key": "",
+      "size": 224044,
+      "isLoop": false
+    },
+    {
+      "slot": 301,
+      "name": "PHD1_Tambourine_01",
+      "filename": "PHD1_Tambourine_01.wav",
+      "originalPath": "Dream Pop/One_Shot/Percussion/PHD1_Tambourine_01.wav",
+      "optimizedPath": ".knockout/optimized/perc/L1VzZXJzL3Rob3JzdGVu.wav",
+      "category": "perc",
+      "bpm": 0,
+      "key": "",
+      "size": 298804,
+      "isLoop": false
+    },
+    {
+      "slot": 302,
+      "name": "Reticence_Phonk_Perc_08_F",
+      "filename": "Reticence_Phonk_Perc_08_F.wav",
+      "originalPath": "Drift Phonk/One_Shot/Percussion/Reticence_Phonk_Perc_08_F.wav",
+      "optimizedPath": ".knockout/optimized/perc/L1VzZXJzL3Rob3JzdGVu.wav",
+      "category": "perc",
+      "bpm": 0,
+      "key": "",
+      "size": 132344,
+      "isLoop": false
+    },
+    {
+      "slot": 303,
+      "name": "Colossal808_808_Trueform_keyC",
+      "filename": "Colossal808_808_Trueform_keyC.wav",
+      "originalPath": "Drift Phonk/One_Shot/Bass/Colossal808_808_Trueform_keyC.wav",
+      "optimizedPath": ".knockout/optimized/perc/L1VzZXJzL3Rob3JzdGVu.wav",
+      "category": "perc",
+      "bpm": 0,
+      "key": "C",
+      "size": 296534,
+      "isLoop": false
+    },
+    {
+      "slot": 400,
+      "name": "Doc_Ish_Bass_Guitar_keyA_one_shot",
+      "filename": "Doc_Ish_Bass_Guitar_keyA_one_shot.wav",
+      "originalPath": "Dream Pop/One_Shot/Bass/Doc_Ish_Bass_Guitar_keyA_one_shot.wav",
+      "optimizedPath": ".knockout/optimized/bass/L1VzZXJzL3Rob3JzdGVu.wav",
+      "category": "bass",
+      "bpm": 0,
+      "key": "A",
+      "size": 635160,
+      "isLoop": false
+    },
+    {
+      "slot": 401,
+      "name": "AA_LBV2_F_BASS_GUITAR",
+      "filename": "AA_LBV2_F_BASS_GUITAR.wav",
+      "originalPath": "Dream Pop/One_Shot/Bass/AA_LBV2_F_BASS_GUITAR.wav",
+      "optimizedPath": ".knockout/optimized/bass/L1VzZXJzL3Rob3JzdGVu.wav",
+      "category": "bass",
+      "bpm": 0,
+      "key": "",
+      "size": 1553318,
+      "isLoop": false
+    },
+    {
+      "slot": 402,
+      "name": "OFJGS_Electric_Guitar_High_FX_keyAm_85bpm",
+      "filename": "OFJGS_Electric_Guitar_High_FX_keyAm_85bpm.wav",
+      "originalPath": "Dream Pop/Loop/Fx/OFJGS_Electric_Guitar_High_FX_keyAm_85bpm.wav",
+      "optimizedPath": ".knockout/optimized/bass/L1VzZXJzL3Rob3JzdGVu.wav",
+      "category": "bass",
+      "bpm": 85,
+      "key": "Amin",
+      "size": 1636562,
+      "isLoop": true
+    },
+    {
+      "slot": 600,
+      "name": "LV_LV_Xye_Vocals_OneShot_Vocals_99_keyAMin",
+      "filename": "LV_LV_Xye_Vocals_OneShot_Vocals_99_keyAMin.wav",
+      "originalPath": "Dream Pop/One_Shot/Vocals/LV_LV_Xye_Vocals_OneShot_Vocals_99_keyAMin.wav",
+      "optimizedPath": ".knockout/optimized/loop/L1VzZXJzL3Rob3JzdGVu.wav",
+      "category": "loop",
+      "bpm": 0,
+      "key": "Amin",
+      "size": 1513412,
+      "isLoop": false
+    },
+    {
+      "slot": 601,
+      "name": "Guitar_Layered_Loop_24_Am_94bpm",
+      "filename": "Guitar_Layered_Loop_24_Am_94bpm.wav",
+      "originalPath": "Dream Pop/Loop/Guitars/Guitar_Layered_Loop_24_Am_94bpm.wav",
+      "optimizedPath": ".knockout/optimized/loop/L1VzZXJzL3Rob3JzdGVu.wav",
+      "category": "loop",
+      "bpm": 94,
+      "key": "Amin",
+      "size": 5412372,
+      "isLoop": true
+    },
+    {
+      "slot": 602,
+      "name": "Guitar Fx_2_KeyG#_115bpm",
+      "filename": "Guitar Fx_2_KeyG#_115bpm.wav",
+      "originalPath": "Dream Pop/Loop/Fx/Guitar Fx_2_KeyG#_115bpm.wav",
+      "optimizedPath": ".knockout/optimized/loop/L1VzZXJzL3Rob3JzdGVu.wav",
+      "category": "loop",
+      "bpm": 115,
+      "key": "G#",
+      "size": 4417718,
+      "isLoop": true
+    }
+  ],
+  "padAssignments": [
+    {
+      "group": "a",
+      "pad": 1,
+      "config": {
+        "slot": 300,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 2,
+      "config": {
+        "slot": 400,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 3,
+      "config": {
+        "slot": 3,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 4,
+      "config": {
+        "slot": 4,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 5,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 6,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 7,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 8,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 9,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 10,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 11,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "a",
+      "pad": 12,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 1,
+      "config": {
+        "slot": 300,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 2,
+      "config": {
+        "slot": 301,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 3,
+      "config": {
+        "slot": 302,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 4,
+      "config": {
+        "slot": 303,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 5,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 6,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 7,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 8,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 9,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 10,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 11,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "b",
+      "pad": 12,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "c",
+      "pad": 1,
+      "config": {
+        "slot": 400,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "c",
+      "pad": 2,
+      "config": {
+        "slot": 401,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "c",
+      "pad": 3,
+      "config": {
+        "slot": 402,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 85,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 1
+      }
+    },
+    {
+      "group": "c",
+      "pad": 4,
+      "config": {
+        "slot": 600,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "c",
+      "pad": 5,
+      "config": {
+        "slot": 601,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 94,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 1
+      }
+    },
+    {
+      "group": "c",
+      "pad": 6,
+      "config": {
+        "slot": 602,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 115,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 1
+      }
+    },
+    {
+      "group": "c",
+      "pad": 7,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "c",
+      "pad": 8,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "c",
+      "pad": 9,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "c",
+      "pad": 10,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "c",
+      "pad": 11,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "c",
+      "pad": 12,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 1,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 2,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 3,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 4,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 5,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 6,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 7,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 8,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 9,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 10,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 11,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    },
+    {
+      "group": "d",
+      "pad": 12,
+      "config": {
+        "slot": 0,
+        "inPoint": 0,
+        "outPoint": 0,
+        "bpm": 0,
+        "volume": 100,
+        "rootNote": 60,
+        "flags": 255,
+        "loopFlag": 0
+      }
+    }
+  ],
+  "slotMap": {
+    "1": {
+      "slot": 1,
+      "name": "AMV_VDB5_drums_ride_one_shot_darkride",
+      "filename": "AMV_VDB5_drums_ride_one_shot_darkride.wav",
+      "originalPath": "Dream Pop/One_Shot/Drums/AMV_VDB5_drums_ride_one_shot_darkride.wav",
+      "optimizedPath": null,
+      "category": "kick",
+      "bpm": 0,
+      "key": "",
+      "size": 883998,
+      "isLoop": false
+    },
+    "2": {
+      "slot": 2,
+      "name": "DDD_Drums_One-shot_Drum-Machine_RX11_Ride_Pop_Funk_Disco_80s",
+      "filename": "DDD_Drums_One-shot_Drum-Machine_RX11_Ride_Pop_Funk_Disco_80s.wav",
+      "originalPath": "Dream Pop/One_Shot/Drums/DDD_Drums_One-shot_Drum-Machine_RX11_Ride_Pop_Funk_Disco_80s.wav",
+      "optimizedPath": null,
+      "category": "kick",
+      "bpm": 0,
+      "key": "",
+      "size": 680578,
+      "isLoop": false
+    },
+    "3": {
+      "slot": 3,
+      "name": "OSTAudio_snare_digital",
+      "filename": "OSTAudio_snare_digital.wav",
+      "originalPath": "Dream Pop/One_Shot/Drums/OSTAudio_snare_digital.wav",
+      "optimizedPath": null,
+      "category": "kick",
+      "bpm": 0,
+      "key": "",
+      "size": 119114,
+      "isLoop": false
+    },
+    "4": {
+      "slot": 4,
+      "name": "STCR2_PR2_Kick_01_Essence_F",
+      "filename": "STCR2_PR2_Kick_01_Essence_F.wav",
+      "originalPath": "Drift Phonk/One_Shot/Drums/STCR2_PR2_Kick_01_Essence_F.wav",
+      "optimizedPath": null,
+      "category": "kick",
+      "bpm": 0,
+      "key": "",
+      "size": 42560,
+      "isLoop": false
+    },
+    "300": {
+      "slot": 300,
+      "name": "Afro-Tech-Percs-vol-1_Rhythm-Science_tambourine_percussion_oneshot_phrase",
+      "filename": "Afro-Tech-Percs-vol-1_Rhythm-Science_tambourine_percussion_oneshot_phrase.wav",
+      "originalPath": "Dream Pop/One_Shot/Percussion/Afro-Tech-Percs-vol-1_Rhythm-Science_tambourine_percussion_oneshot_phrase.wav",
+      "optimizedPath": null,
+      "category": "perc",
+      "bpm": 0,
+      "key": "",
+      "size": 224044,
+      "isLoop": false
+    },
+    "301": {
+      "slot": 301,
+      "name": "PHD1_Tambourine_01",
+      "filename": "PHD1_Tambourine_01.wav",
+      "originalPath": "Dream Pop/One_Shot/Percussion/PHD1_Tambourine_01.wav",
+      "optimizedPath": null,
+      "category": "perc",
+      "bpm": 0,
+      "key": "",
+      "size": 298804,
+      "isLoop": false
+    },
+    "302": {
+      "slot": 302,
+      "name": "Reticence_Phonk_Perc_08_F",
+      "filename": "Reticence_Phonk_Perc_08_F.wav",
+      "originalPath": "Drift Phonk/One_Shot/Percussion/Reticence_Phonk_Perc_08_F.wav",
+      "optimizedPath": null,
+      "category": "perc",
+      "bpm": 0,
+      "key": "",
+      "size": 132344,
+      "isLoop": false
+    },
+    "303": {
+      "slot": 303,
+      "name": "Colossal808_808_Trueform_keyC",
+      "filename": "Colossal808_808_Trueform_keyC.wav",
+      "originalPath": "Drift Phonk/One_Shot/Bass/Colossal808_808_Trueform_keyC.wav",
+      "optimizedPath": null,
+      "category": "perc",
+      "bpm": 0,
+      "key": "C",
+      "size": 296534,
+      "isLoop": false
+    },
+    "400": {
+      "slot": 400,
+      "name": "Doc_Ish_Bass_Guitar_keyA_one_shot",
+      "filename": "Doc_Ish_Bass_Guitar_keyA_one_shot.wav",
+      "originalPath": "Dream Pop/One_Shot/Bass/Doc_Ish_Bass_Guitar_keyA_one_shot.wav",
+      "optimizedPath": null,
+      "category": "bass",
+      "bpm": 0,
+      "key": "A",
+      "size": 635160,
+      "isLoop": false
+    },
+    "401": {
+      "slot": 401,
+      "name": "AA_LBV2_F_BASS_GUITAR",
+      "filename": "AA_LBV2_F_BASS_GUITAR.wav",
+      "originalPath": "Dream Pop/One_Shot/Bass/AA_LBV2_F_BASS_GUITAR.wav",
+      "optimizedPath": null,
+      "category": "bass",
+      "bpm": 0,
+      "key": "",
+      "size": 1553318,
+      "isLoop": false
+    },
+    "402": {
+      "slot": 402,
+      "name": "OFJGS_Electric_Guitar_High_FX_keyAm_85bpm",
+      "filename": "OFJGS_Electric_Guitar_High_FX_keyAm_85bpm.wav",
+      "originalPath": "Dream Pop/Loop/Fx/OFJGS_Electric_Guitar_High_FX_keyAm_85bpm.wav",
+      "optimizedPath": null,
+      "category": "bass",
+      "bpm": 85,
+      "key": "Amin",
+      "size": 1636562,
+      "isLoop": true
+    },
+    "600": {
+      "slot": 600,
+      "name": "LV_LV_Xye_Vocals_OneShot_Vocals_99_keyAMin",
+      "filename": "LV_LV_Xye_Vocals_OneShot_Vocals_99_keyAMin.wav",
+      "originalPath": "Dream Pop/One_Shot/Vocals/LV_LV_Xye_Vocals_OneShot_Vocals_99_keyAMin.wav",
+      "optimizedPath": null,
+      "category": "loop",
+      "bpm": 0,
+      "key": "Amin",
+      "size": 1513412,
+      "isLoop": false
+    },
+    "601": {
+      "slot": 601,
+      "name": "Guitar_Layered_Loop_24_Am_94bpm",
+      "filename": "Guitar_Layered_Loop_24_Am_94bpm.wav",
+      "originalPath": "Dream Pop/Loop/Guitars/Guitar_Layered_Loop_24_Am_94bpm.wav",
+      "optimizedPath": null,
+      "category": "loop",
+      "bpm": 94,
+      "key": "Amin",
+      "size": 5412372,
+      "isLoop": true
+    },
+    "602": {
+      "slot": 602,
+      "name": "Guitar Fx_2_KeyG#_115bpm",
+      "filename": "Guitar Fx_2_KeyG#_115bpm.wav",
+      "originalPath": "Dream Pop/Loop/Fx/Guitar Fx_2_KeyG#_115bpm.wav",
+      "optimizedPath": null,
+      "category": "loop",
+      "bpm": 115,
+      "key": "G#",
+      "size": 4417718,
+      "isLoop": true
+    }
+  },
+  "createdAt": "2026-06-01T18:59:07.149Z",
+  "updatedAt": "2026-06-06T09:45:35.277Z"
+}

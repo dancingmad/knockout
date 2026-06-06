@@ -1,0 +1,22 @@
+{
+  "name": "knockout",
+  "version": "1.0.0",
+  "description": "K.O. II Song Workflow - EP-133 Sample Manager & Sequencer",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd app/frontend && npm run dev",
+    "dev:backend": "cd app/backend && npm run dev",
+    "build": "cd app/frontend && npm run build",
+    "start": "cd app/backend && npm start",
+    "server": "npm run build && npm run start",
+    "clean": "rm -rf app/frontend/dist .knockout/optimized app/backend/node_modules/.cache",
+    "help": "echo 'Commands: npm run dev (both), npm run dev:frontend, npm run dev:backend, npm run build, npm run start, npm run server'"
+  },
+  "keywords": ["ep-133", "ko2", "sampler", "teenage-engineering"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "dependencies": {}
+}

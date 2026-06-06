@@ -1,4 +1,5 @@
-*/node_modules/**
 *.wav
 .idea
 *.ppak
+/.env
+/app/frontend/dist/
